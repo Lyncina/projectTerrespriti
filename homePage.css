@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(210, 30%, 20%, 1);
+}
+
+header {
+  font-size: 2rem;
+  color: hsla(210, 5%, 75%, 1);
+}
+
+header > p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header > h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+  text-shadow: 0.1rem 0 0 hsla(210, 5%, 40%, 1), 0 0.1rem 0 hsla(210, 5%, 15%, 1), -0.1rem 0 0 hsla(210, 5%, 20%, 1), 0 -0.1rem 0 hsla(210, 5%, 60%, 1);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  color: hsla(210, 5%, 75%, 1);
+}
