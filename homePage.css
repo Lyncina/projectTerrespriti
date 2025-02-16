@@ -4,11 +4,14 @@
 }
 
 body {
+  position: relative;
+  padding: 3pt;
   background-color: hsla(210, 30%, 20%, 1);
+  font-size: 100%;
 }
 
 header {
-  font-size: 2rem;
+  font-size: min(5vw, 2rem);
   color: hsla(210, 5%, 75%, 1);
 }
 
@@ -21,6 +24,25 @@ header > h1 {
   text-shadow: 0.1rem 0 0 hsla(210, 5%, 40%, 1), 0 0.1rem 0 hsla(210, 5%, 15%, 1), -0.1rem 0 0 hsla(210, 5%, 20%, 1), 0 -0.1rem 0 hsla(210, 5%, 60%, 1);
 }
 
+navbar {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 3pt;
+  width: 70pt;
+  background-color: #00000080;
+  > a {
+    color: hsla(210, 5%, 75%, 1);
+    text-decoration: none;
+    
+  }
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -28,4 +50,8 @@ footer {
   justify-content: space-around;
   font-size: 0.9rem;
   color: hsla(210, 5%, 75%, 1);
+}
+
+@media only screen and (min-width: 600px) {
+
 }
