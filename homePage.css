@@ -47,6 +47,7 @@
   a {
     font-size: 16pt;
     text-decoration: 0.8pt underline;
+    color: inherit;
   }
   p {
     font-size: 12pt;
