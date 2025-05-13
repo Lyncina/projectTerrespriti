@@ -1,0 +1,106 @@
+/*      TO-DOs     */
+/*
+- 
+*/
+
+/*Default settings optimized for small screens*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: static;
+  padding: 5pt;
+  height: 100%;
+  background-color: hsla(210, 30%, 20%, 1);
+  font-size: 100%;
+}
+
+header {
+  position: static;
+  height: 20vw;
+  width: 100%;
+  font-size: min(4.9vw, 24pt);
+  color: hsla(210, 5%, 75%, 1);
+}
+
+header > p {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+header > h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+  text-shadow: 1pt 0 0 hsla(210, 5%, 40%, 1), 0 1pt 0 hsla(210, 5%, 15%, 1), -1pt 0 0 hsla(210, 5%, 20%, 1), 0 -1pt 0 hsla(210, 5%, 60%, 1);
+}
+
+navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: static;
+  padding-left: 5pt;
+  width: 100%;
+  background-color: #00000080;
+  border-radius: 7px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 14pt;
+  text-shadow: 0 0 5px hsla(210, 5%, 15%, 1);
+  > a {
+    margin: 3pt 3pt;
+    padding: 1pt 2pt;
+    background: linear-gradient(to top, hsla(210, 15%, 60%, .5) 0%, transparent 60%);
+    border-radius: 6px;
+    color: hsla(210, 5%, 75%, 1);
+    text-decoration: none;
+  }
+  > a:hover {
+    background: linear-gradient(to top, hsla(210, 30%, 62%, .5) 0%, #00000080 60%);
+    color: hsla(210, 5%, 100%, 1);
+  }
+  .logged-in, .logged-out {
+    display: block;
+  }
+}
+
+main {
+  min-height: 100pt;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin: 30pt auto 4pt;
+  padding: 4pt;
+  width: 100%;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent 5%, hsla(210, 5%, 75%, .5) 10%, #00000080 30% 70%, hsla(210, 5%, 75%, .5) 90%, transparent 95%) 1;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11pt;
+  color: hsla(210, 5%, 75%, 1);
+  a {
+    margin: 0 5pt;
+    color: hsla(210, 5%, 75%, 1);
+    text-decoration: none;
+  }
+  a:hover {
+    color: hsla(210, 5%, 100%, 1);
+  }
+}
+
+/*Larger screens*/
+@media only screen and (min-width: 640px) {
+  header {
+    height: 95pt;
+  }
+}

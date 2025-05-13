@@ -1,31 +1,77 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
+/*      TO-DOs     */
+/*
+- 
+*/
+
+/*Default settings optimized for small screens*/
+
+.intro {
+  position: relative;
+  margin: 80pt auto 50pt;
+  width: 100%;
+  text-align: center;
+  font-size: 18pt;
+  color: hsla(210, 5%, 80%, 1);
 }
 
-body {
-  background-color: hsla(210, 30%, 20%, 1);
-}
-
-header {
-  font-size: 2rem;
-  color: hsla(210, 5%, 75%, 1);
-}
-
-header > p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header > h1 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
-  text-shadow: 0.1rem 0 0 hsla(210, 5%, 40%, 1), 0 0.1rem 0 hsla(210, 5%, 15%, 1), -0.1rem 0 0 hsla(210, 5%, 20%, 1), 0 -0.1rem 0 hsla(210, 5%, 60%, 1);
-}
-
-footer {
+.news {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  font-size: 0.9rem;
+  justify-content: center;
+  position: relative;
+  padding: 5pt;
+  border-radius: 7px;
+  background-color: #00000045;
   color: hsla(210, 5%, 75%, 1);
+  .news-header {
+    flex: 100%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size: 12vw;
+    text-shadow: 0.8pt 0 0 hsla(210, 5%, 40%, 1), 0 0.8pt 0 hsla(210, 5%, 15%, 1), -0.8pt 0 0 hsla(210, 5%, 20%, 1), 0 -0.8pt 0 hsla(210, 5%, 60%, 1);
+  }
+}
+
+.news-cards {
+  flex: 48%;
+  margin: 3pt;
+  padding: 3pt;
+  height: 72pt;
+  border-radius: 7px;
+  background: linear-gradient(to top, hsla(210, 15%, 60%, .5) 0%, #0000001f 60%);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 16pt;
+  overflow: hidden;
+  a {
+    font-size: 16pt;
+    text-decoration: 0.8pt underline;
+    color: inherit;
+  }
+  p {
+    font-size: 12pt;
+  }
+  p::after {
+    content: "...";
+  }
+}
+
+.news-cards:hover {
+  background: linear-gradient(to top, hsla(210, 30%, 62%, .5) 0%, #00000080 60%);
+  color: hsla(210, 5%, 100%, 1);
+  cursor: pointer;
+}
+
+/*Slightly bigger screens (Most modern smartphones)*/
+@media only screen and (min-width: 243px) {
+  .news-header {
+    font-size: 22pt !important;
+  }
+}
+
+/*Larger screens (Tablets, PCs, TVs)*/
+@media only screen and (min-width: 640px) {
+    .intro {
+    font-size: 24pt;
+  }
 }
