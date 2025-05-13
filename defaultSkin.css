@@ -1,14 +1,7 @@
 /*      TO-DOs     */
 /*
-- Figure out header min/max height/margins when screen width is less than 222px
+- 
 */
-
-@media only screen and (max-width: 243px) {
-  /*Testing purposes*/
-  header {
-    background-color: #FFF;
-  }
-}
 
 /*Default settings optimized for small screens*/
 
@@ -29,7 +22,7 @@ header {
   position: static;
   height: 20vw;
   width: 100%;
-  font-size: min(5vw, 24pt);
+  font-size: min(4.9vw, 24pt);
   color: hsla(210, 5%, 75%, 1);
 }
 
@@ -108,8 +101,6 @@ footer {
 /*Larger screens*/
 @media only screen and (min-width: 640px) {
   header {
-    margin: 0;
     height: 95pt;
-    background-color: white;
   }
 }

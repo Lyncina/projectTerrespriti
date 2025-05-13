@@ -1,8 +1,6 @@
 /*      TO-DOs     */
 /*
-- Fix card flex percentage when screen width is less than 370px
-- Figure out font-size of .news-header when screen width is less than 243px
-- Restrict character amount in cards
+- 
 */
 
 /*Default settings optimized for small screens*/
@@ -30,20 +28,21 @@
     flex: 100%;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
-    font-size: 22pt;
+    font-size: 12vw;
     text-shadow: 0.8pt 0 0 hsla(210, 5%, 40%, 1), 0 0.8pt 0 hsla(210, 5%, 15%, 1), -0.8pt 0 0 hsla(210, 5%, 20%, 1), 0 -0.8pt 0 hsla(210, 5%, 60%, 1);
   }
 }
 
 .news-cards {
-  flex: 40%;
+  flex: 48%;
   margin: 3pt;
   padding: 3pt;
-  height: 60pt;
+  height: 72pt;
   border-radius: 7px;
   background: linear-gradient(to top, hsla(210, 15%, 60%, .5) 0%, #0000001f 60%);
   font-family: 'Segoe UI', Tahoma, sans-serif;
   line-height: 16pt;
+  overflow: hidden;
   a {
     font-size: 16pt;
     text-decoration: 0.8pt underline;
@@ -63,7 +62,14 @@
   cursor: pointer;
 }
 
-/*Larger screens*/
+/*Slightly bigger screens (Most modern smartphones)*/
+@media only screen and (min-width: 243px) {
+  .news-header {
+    font-size: 22pt !important;
+  }
+}
+
+/*Larger screens (Tablets, PCs, TVs)*/
 @media only screen and (min-width: 640px) {
     .intro {
     font-size: 24pt;
